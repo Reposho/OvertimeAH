@@ -1,0 +1,161 @@
+.reveal form {
+    display: flex;
+    justify-content: center;
+}
+.reveal ul {
+    font-size: 0.59em;
+    list-style-type: none;
+    width: 100%;
+}
+.reveal ul.left {
+    margin-left: 0;
+}
+.reveal ul.radios li {
+    display: flex;
+    justify-content: space-between;
+}
+.reveal ul li {
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid rgb(0 0 0 / 5%);
+    box-shadow: 0 0 6px 0px rgb(193 193 193 / 11%);
+    transition: all 0.2s;
+}
+.reveal ul li:hover {
+    border: 1px solid rgb(0 0 0 / 10%);
+}
+.reveal ul li select {
+    font-size: 0.7em;
+    font-family: Lato, sans-serif;
+}
+.reveal ul li input[type="text"] {
+    font-family: Lato, sans-serif;
+    font-size: 0.7em;
+    font-weight: 800;
+    width: 270px;
+}
+.reveal ul li input[type='radio']{
+    display: none;
+}
+.reveal ul li label {
+    background-color: #DEEBF7;
+    color: #333;
+    box-shadow: 0px 0px 1px 1px rgb(0 0 0 / 10%);
+    font-size: 0.9em;
+    padding: 0 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.reveal ul li input[type='radio']:checked + label{
+    background-color: #333;
+    color: white;
+    box-shadow: none;
+}
+.reveal ul li input[type='radio']:checked:disabled + label{
+    background-color: #a2d698;
+    color: black;
+    box-shadow: none;
+    cursor: default;
+}
+.reveal ul li input[type='radio']:disabled + label{
+    background-color: rgba(222, 235, 247, 0.4);
+    box-shadow: none;
+    cursor: default;
+}
+
+.reveal button {
+    align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.reveal button:hover,
+.reveal button:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.reveal button:hover {
+  transform: translateY(-1px);
+}
+
+.reveal button:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+.reveal input[type="button"] {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 0.60;
+  margin: 0;
+  min-height: 1rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.reveal input[type="button"]:hover,
+.reveal input[type="button"]:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.reveal input[type="button"]:hover {
+  transform: translateY(-1px);
+}
+
+.reveal input[type="button"]:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
